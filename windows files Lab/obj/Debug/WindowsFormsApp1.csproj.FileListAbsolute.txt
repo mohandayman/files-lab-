@@ -1,0 +1,22 @@
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\mohand\Desktop\widows aplication\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\bin\Debug\WindowsFormsApp1.exe
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.File_System.resources
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.exe
+C:\Users\mohand\Desktop\Windows Form Labs\windows files Lab\obj\Debug\WindowsFormsApp1.pdb
