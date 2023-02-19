@@ -19,7 +19,9 @@ namespace WindowsFormsApp1
 
         /*      var current_Dirctory = Directory.SetCurrentDirectory("");*/
 
-
+        DateTime List1_LastAccess;
+        DateTime List2_LastAccess;
+        int result;
 
         public File_System()
         {
@@ -360,6 +362,94 @@ namespace WindowsFormsApp1
            
 
 
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            result = DateTime.Compare(List1_LastAccess, List2_LastAccess);
+
+
+            if (result > 0)
+            {
+
+
+
+                copyMethod(textBox1.Text, textBox2.Text);
+            }
+            else
+            {
+                copyMethod(textBox2.Text, textBox1.Text);
+
+            }
+
+
+        }
+
+        public static object copyMethod(string copyPath_source , string copyPath_dest  )
+        {
+            if(File.Exists(copyPath_source))
+            {// if is a File
+                string fileName =Path.GetFileName(copyPath_source);
+              return  File.Create($@"{copyPath_dest}\{fileName}");
+            }
+            else if (Directory.Exists(copyPath_source))
+            {   // if is a folder 
+                DirectoryInfo source_Directory_INfo = Directory.CreateDirectory(copyPath_source);
+                DirectoryInfo[] sub_folders = source_Directory_INfo.GetDirectories();
+                FileInfo[] sub_files = source_Directory_INfo.GetFiles();
+                if (sub_folders.Length == 0 && sub_files.Length ==0 )       // if the folder is empty
+                {
+                    return Directory.CreateDirectory($@"{copyPath_dest}\{source_Directory_INfo.Name}");
+                }
+                else
+                {
+                     Directory.CreateDirectory($@"{copyPath_dest}\{source_Directory_INfo.Name}");
+
+                    foreach (FileInfo subFile in sub_files)
+                    {
+                        return copyMethod(subFile.FullName, $@"{copyPath_dest}\{source_Directory_INfo.Name}");
+                    }
+                    foreach(DirectoryInfo subFolder in sub_folders)
+                    {
+                        return copyMethod(subFolder.FullName, $@"{copyPath_dest}\{source_Directory_INfo.Name}");
+                    }
+                }
+            }
+             { return 0; }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+            if (textBox2.Text != "")
+
+            if (Directory.Exists(textBox2.Text))
+            {
+
+                List2_LastAccess = Directory.GetLastAccessTime(textBox2.Text);
+            }
+            else
+            {
+                List2_LastAccess = File.GetLastAccessTime(textBox2.Text);
+            }
+
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+
+            if (Directory.Exists(textBox1.Text))
+            {
+                List1_LastAccess = Directory.GetLastAccessTime(textBox1.Text);
+            }
+            else
+            {
+                List1_LastAccess = File.GetLastAccessTime(textBox1.Text);
+            }
 
         }
     }
